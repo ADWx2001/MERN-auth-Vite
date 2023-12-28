@@ -13,7 +13,8 @@ mongoose.connect(process.env.MONGO).then(()=>{
 
 const app = express();
 
-app.listen(3000,()=>{
+app.listen(8070,()=>{
     console.log('server is up and run on port  3000');
 })
 
+app.use('/user', userRoutes);
