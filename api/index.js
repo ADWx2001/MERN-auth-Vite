@@ -24,4 +24,5 @@ app.listen(8070,()=>{
 
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
+
 // app.use("/api/auth", authRoutes)
