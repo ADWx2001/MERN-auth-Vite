@@ -37,13 +37,7 @@ export const signin = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-  // if(!email || !password ) return res.status(400).json({message:'Please provide an email and a password'})
-  // const user = await User.findOne({email}).select('+password') // select is used to show or hide some fields in the response
-  // const user = await User.findOne({email}).select('+password');
-  // if (!user) return res.status(400).json({message:'Invalid credentials'});
-  // const validPassowrd=await bcryptjs.compare(password, user.password);
-  // if(!validPassoword)return res.status(400).json({message:'Invalid credentials'});
-  // res.status(200).json({token:user.generateAuthToken(), message:'Sign in successful'});
+ 
 };
 
 export const google = async (req, res, next) => {

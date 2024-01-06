@@ -13,7 +13,6 @@ export default function Contact() {
             <label htmlFor="message">Message: </label>
             <textarea name="message" id="message" rows="5"></textarea><br />
             <button type="submit">Submit</button>
-            
         </form>
     </div>
   )
