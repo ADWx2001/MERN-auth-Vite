@@ -8,6 +8,7 @@ import About from './pages/About';
 
 import Header from './components/Header';
 import Contact from './pages/Contact';
+import PrivateRoute from './components/PrivateRoute';
 
 
 
@@ -20,7 +21,9 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/sign-in" element={<Signin />} />
             <Route path="/sign-up" element={<Signup />} />
-            <Route path="/Profile" element={<Profile />} />
+            <Route element={<PrivateRoute/>}>
+              <Route path="/Profile" element={<Profile />} />
+            </Route>
             <Route path="/Contact" element={<Contact/>}/>
         </Routes>
     </BrowserRouter>
